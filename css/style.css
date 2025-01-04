@@ -1,10 +1,20 @@
+
+html {
+    box-sizing: border-box;
+    width: 1903px;
+    height: 3990px;
+}
+
 body {
     margin: 0;
     background-color: #171422;
+    width: 1903px;
+
 }
 
 header {
     height: 80px;
+    width: 1903px;
     position: relative;
 
 }
@@ -14,7 +24,7 @@ header::after {
     background: linear-gradient(220deg, #9E0B37, #FFC531, #9E0B37);
     display: block;
     position: absolute;
-    width: 1920px;
+    width: 1903px;
     height: 100%;
     z-index: 1;
     top: 0;
@@ -24,6 +34,7 @@ header::after {
 .conteiner {
     position: relative;
     left: 250px;
+    width: 1650px;
 }
 
 nav {
@@ -85,7 +96,7 @@ li:not(:last-child) {
     top: 6px;
     left: 123px;
     position: absolute;
-    background-image: url(/img/Down_Arrow_3_.png);
+    background-image: url(../img/Down_Arrow_3_.png);
     background-repeat: no-repeat;
 }
 
@@ -111,7 +122,7 @@ li:not(:last-child) {
     height: 49px;
     position: absolute;
     top: 15px;
-    left: 1263px;
+    left: 1260px;
     padding: 17px 72px 24px 25px;
     border: 0;
     border-radius: 40px;
@@ -177,13 +188,13 @@ li:not(:last-child) {
     width: 1070px;
     height: 648px;
     top: -80px;
-    left: 850px;
+    left: 833px;
 }
 
 .about {
     position: relative;
     left: 250px;
-    top: 82px;
+    top: 98px;
 }
 
 .about_div {
@@ -199,7 +210,7 @@ li:not(:last-child) {
     width: 1070px;
     height: 62px;
     position: absolute;
-    top: 10px;
+    top: 40px;
     left: 40px;
     font-family: Gotham Pro;
     font-size: 27px;
@@ -236,7 +247,7 @@ li:not(:last-child) {
     margin: 0;
     width: 1060px;
     height: 62px;
-    top: 184px;
+    top: 210px;
     left: 120px;
     position: absolute;
     font-family: Gotham Pro;
@@ -277,11 +288,15 @@ li:not(:last-child) {
     text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
+.about_p4:nth-child(2)  {
+    top:80px;
+    position: absolute;
+  }
 
 .about_4 {
     width: 1180px;
     height: 113px;
-    top: 520px;
+    top: 545px;
     left: 0px;
     position: absolute;
 }
@@ -392,7 +407,7 @@ li:not(:last-child) {
     margin: 0;
     width: 1060px;
     height: 62px;
-    top: 708px;
+    top: 735px;
     left: 120px;
     position: absolute;
     font-family: Gotham Pro;
@@ -409,7 +424,7 @@ li:not(:last-child) {
     margin: 0;
     width: 1060px;
     height: 124px;
-    top: 850px;
+    top: 877px;
     left: 120px;
     position: absolute;
     font-family: Gotham Pro;
@@ -525,13 +540,17 @@ li:not(:last-child) {
     position: absolute;
 }
 
+.about {
+    width: 1650px;
+}
+
 .about_images {
     width: 273px;
     height: 187px;
     top: 1030.08px;
     left: 240px;
     position: absolute;
-    background-image: url(/img/CorelDRW_gIEIFd6TrD.png);
+    background-image: url(../img/CorelDRW_gIEIFd6TrD.png);
     background-repeat: no-repeat;
 }
 
@@ -541,7 +560,7 @@ li:not(:last-child) {
     top: 1046.08px;
     left: 602px;
     position: absolute;
-    background-image: url(/img/CorelDRW_D3JGGZr4jt.png);
+    background-image: url(../img/CorelDRW_D3JGGZr4jt.png);
     background-repeat: no-repeat;
 }
 
@@ -549,7 +568,7 @@ li:not(:last-child) {
     margin: 0;
     width: 1180px;
     height: 155px;
-    top: 1280px;
+    top: 1293px;
     left: 0px;
     position: absolute;
     font-family: Gotham Pro;
@@ -565,7 +584,7 @@ li:not(:last-child) {
 .about_3_p3 {
     width: 1060px;
     height: 124px;
-    top: 2050px;
+    top: 2031px;
     left: 120px;
     position: absolute;
     font-family: Gotham Pro;
@@ -581,7 +600,7 @@ li:not(:last-child) {
 .about_3_p4 {
     width: 1060px;
     height: 93px;
-    top: 2240px;
+    top: 2236px;
     left: 120px;
     position: absolute;
     font-family: Gotham Pro;
@@ -597,7 +616,7 @@ li:not(:last-child) {
 .about_3_p5 {
     width: 1371px;
     height: 93px;
-    top: 2475px;
+    top: 2458px;
     left: 0px;
     position: absolute;
     font-family: Gotham Pro;
@@ -613,7 +632,7 @@ li:not(:last-child) {
 .about_pdf {
     width: 97px;
     height: 97px;
-    top: 1494px;
+    top: 1478px;
     left: 669px;
     position: absolute;
     border-radius: 50%;
@@ -622,13 +641,13 @@ li:not(:last-child) {
 }
 
 .about_ai {
-    top: 1558px;
+    top: 1542px;
     left: 330px;
     z-index: 1;
 }
 
 .about_coredraf {
-    top: 1558px;
+    top: 1542px;
     left: 1008px;
     z-index: 1;
 }
@@ -663,7 +682,7 @@ li:not(:last-child) {
     top: 49.98px;
     left: 114.62px;
     position: absolute;
-    background-image: url(/img/Vector_rich.png);
+    background-image: url(../img/Vector_rich.png);
     background-repeat: no-repeat;
 }
 
@@ -673,12 +692,12 @@ li:not(:last-child) {
     top: 49.98px;
     left: -155.38px;
     position: absolute;
-    background-image: url(/img/Vector_life.png);
+    background-image: url(../img/Vector_life.png);
     background-repeat: no-repeat;
 }
 
 .buklet {
-    top: 646px;
+    top: 630px;
     left: -8px;
     position: absolute;
 }
@@ -722,21 +741,101 @@ img {
     border-radius: 20px;
 }
 
+.slaider {
+    position: relative;
+    margin: 0;
+    top: 2758px;
+    height: 585px;
+}
 
 .slideshow-container {
-    position: relative;
-    margin: auto;
-    top: 2758px;
-    left: 0px;
+    position: absolute;
+    width: 1920px;
+    left: -18px;
 }
-.slider{
+
+.slider {
     position: relative;
-    margin: auto;
-    top: 2778px;
+    margin: 0;
+    top: 20px;
     left: 0px;
 }
 
-.carousel-cell{
+.carousel-cell {
     height: 280px;
     margin-right: 45px;
+}
+
+.carousel-cell-image {
+    display: flex;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: -8px;
+    width: 206px;
+    height: 36px;
+    z-index: 3;
+}
+
+.switg {
+    top: 0px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider_2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider_2:before {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    left: 0px;
+    bottom: -12px;
+    background-image: url(../img/Group_rich.png);
+    background-repeat: no-repeat;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider_2 {
+    background-color: transparent;
+}
+
+input:checked+.slider_2:before {
+    -webkit-transform: translateX(172px);
+    -ms-transform: translateX(172px);
+    transform: translateX(172px);
+}
+
+/* Закругленные ползунки */
+.slider_2.round {
+    border-radius: 34px;
+}
+
+.slider_2.round:before {
+    border-radius: 50%;
 }
