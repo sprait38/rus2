@@ -1,3 +1,35 @@
+@font-face {
+    font-family: "Gotham Pro";
+    src:
+        local("Gotham Pro"),
+        url("../fonts/gothampro.woff2") format("woff2"),
+        url("../fonts/gothampro.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    src:
+        local("Gotham Pro"),
+        url("../fonts/gothampro_bold.woff2") format("woff2"),
+        url("../fonts/gothampro_bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Abel";
+    src:
+        local("Abel"),
+        url("../fonts/Abel-Regular.woff2") format("woff2"),
+        url("../fonts/Abel-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 html {
     box-sizing: border-box;
@@ -9,7 +41,7 @@ body {
     margin: 0;
     background-color: #171422;
     width: 1903px;
-
+    font-family: "Gotham Pro";
 }
 
 header {
@@ -47,8 +79,9 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    align-items: center;
     width: 437px;
     height: 20px;
     position: absolute;
@@ -57,90 +90,93 @@ ul {
 
 li {
     color: #FFFFFF;
-    font-family: Abel;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20.39px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
-li:not(:last-child) {
+.header_li:not(:last-child) {
     margin-right: 72px;
 }
 
 .header_li {
+    position: relative;
     width: 128px;
-    height: 15px;
+    height: 20px;
 }
 
-.li_span {
-    width: 111px;
-    height: 15px;
-    top: 2.5px;
+.header_li:nth-of-type(2) {
+    width: 90px;
+    height: 20px;
+}
 
-    position: absolute;
-    font-family: Gotham Pro;
-    font-size: 20px;
+.header_li:nth-of-type(3) {
+    width: 75px;
+    height: 20px;
+}
+
+.li_a {
     font-weight: 400;
+    font-size: 16px;
     line-height: 15.31px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    cursor: pointer;
+}
+
+.li_a_2 {
+    font-family: Abel;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.39px;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
 }
 
 .header_li_left {
     width: 12px;
     height: 15px;
-    top: 6px;
+    top: 4px;
     left: 123px;
     position: absolute;
     background-image: url(../img/Down_Arrow_3_.png);
     background-repeat: no-repeat;
 }
 
-.header_span {
+.header_a {
     width: 51px;
     height: 15px;
-    top: 32px;
-    left: 1170px;
+    top: 31px;
+    left: 1168px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 15.31px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #FFFFFF;
     z-index: 2;
+    cursor: pointer;
 }
 
-.btn {
-    width: 160px;
-    height: 49px;
-    position: absolute;
-    top: 15px;
-    left: 1260px;
-    padding: 17px 72px 24px 25px;
-    border: 0;
-    border-radius: 40px;
-    z-index: 2;
-    background-color: rgba(158, 11, 55, 0.7);
-    box-shadow: 4px 4px 6px 0px #FFFFFF80 inset,
-        4px 4px 20px 0px #DF5017CC;
-}
-
-.btn_span {
-    font-family: Gotham Pro;
-    font-size: 21px;
+.btn_a {
     font-weight: 400;
+    font-size: 17px;
     line-height: 16.27px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    position: absolute;
+    padding: 17px 22px;
+    top: 14px;
+    left: 1263px;
+    border-radius: 40px;
+    background: #be4469b3;
+    box-shadow: 4px 4px 20px 0px #DF5017CC, 4px 4px 6px 0px #FFFFFF80 inset;
     color: #FFFFFF;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.btn_a:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn_a:active {
+    background: #17df49cc;
 }
 
 .works {
@@ -165,30 +201,27 @@ li:not(:last-child) {
 .works_left {
     width: 820px;
     height: 120px;
-    top: 176px;
+    top: 178px;
     left: 250px;
     position: absolute;
     z-index: 1;
 }
 
-.works_span {
+.works_h2 {
     text-transform: uppercase;
-    font-family: Gotham Pro;
-    font-size: 53px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 60px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #FFFFFF;
 }
 
 .works_img {
     position: absolute;
-    width: 1070px;
+    width: 1053px;
     height: 648px;
     top: -80px;
-    left: 833px;
+    left: 850px;
 }
 
 .about {
@@ -212,13 +245,10 @@ li:not(:last-child) {
     position: absolute;
     top: 40px;
     left: 40px;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #FFFFFF;
 }
 
@@ -231,13 +261,10 @@ li:not(:last-child) {
 }
 
 .about_1 {
-    font-family: Gotham Pro;
     font-size: 183px;
     font-weight: 700;
     line-height: 201.3px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(172.77deg, #8A2645 15.55%, #291725 56.17%, #171422 75.48%);
@@ -250,13 +277,10 @@ li:not(:last-child) {
     top: 210px;
     left: 120px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -264,39 +288,34 @@ li:not(:last-child) {
     margin: 0;
     width: 335px;
     height: 25px;
-    top: 477px;
-    left: 665px;
+    top: 478px;
+    left: 670px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
     text-align: right;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
 .about_p4 {
     margin: 0;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 25.2px;
+    line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
-.about_p4:nth-child(2)  {
-    top:80px;
+
+.about_p4:nth-child(2) {
+    top: 82px;
     position: absolute;
-  }
+}
 
 .about_4 {
     width: 1180px;
     height: 113px;
-    top: 545px;
+    top: 542px;
     left: 0px;
     position: absolute;
 }
@@ -374,7 +393,7 @@ li:not(:last-child) {
 .about_5_div {
     width: 116px;
     height: 201px;
-    top: 2230px;
+    top: 2232px;
     left: 0px;
     position: absolute;
 }
@@ -382,7 +401,7 @@ li:not(:last-child) {
 .about_4_div {
     width: 127px;
     height: 201px;
-    top: 2030px;
+    top: 2028px;
     left: 0px;
     position: absolute;
 }
@@ -390,7 +409,7 @@ li:not(:last-child) {
 .about_3_div {
     width: 114px;
     height: 201px;
-    top: 848px;
+    top: 846px;
     left: 0px;
     position: absolute;
 }
@@ -398,7 +417,7 @@ li:not(:last-child) {
 .about_2_div {
     width: 115px;
     height: 201px;
-    top: 650px;
+    top: 670px;
     left: 0px;
     position: absolute;
 }
@@ -410,13 +429,10 @@ li:not(:last-child) {
     top: 735px;
     left: 120px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -427,13 +443,10 @@ li:not(:last-child) {
     top: 877px;
     left: 120px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -495,20 +508,18 @@ li:not(:last-child) {
     top: 3px;
     left: 13px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 9px;
+    font-size: 9.09px;
     font-weight: 700;
     line-height: 12.72px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
 }
 
 .text_git {
+    width: 153px;
     top: 4px;
-    left: 8px;
+    left: 9px;
 }
 
 .galireya_text_2 {
@@ -517,20 +528,16 @@ li:not(:last-child) {
     top: 15px;
     left: 55px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 10.39px;
+    font-size: 13.39px;
     font-weight: 700;
     line-height: 18.75px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
 }
 
 .text_git_2 {
-    top: 15px;
-    left: 31px;
+    top: 14px;
+    left: 37px;
     width: 107px;
 }
 
@@ -571,61 +578,49 @@ li:not(:last-child) {
     top: 1293px;
     left: 0px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
 .about_3_p3 {
     width: 1060px;
     height: 124px;
-    top: 2031px;
+    top: 2037px;
     left: 120px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
 .about_3_p4 {
     width: 1060px;
     height: 93px;
-    top: 2236px;
+    top: 2241px;
     left: 120px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
 .about_3_p5 {
     width: 1371px;
     height: 93px;
-    top: 2458px;
+    top: 2464px;
     left: 0px;
     position: absolute;
-    font-family: Gotham Pro;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(255, 255, 255, 1);
 }
 
